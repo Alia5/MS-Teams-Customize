@@ -4,6 +4,11 @@
     "description": "enable debug tools, inject javascript/css and customize the shitty ms teams",
     "main": "dist/index.js",
     "bin": "dist/index.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Alia5/MS-Teams-Customize"
+    },
+    "readme": "README.md",
     "scripts": {
         "lint": "eslint src/",
         "lint:fix": "eslint src/",
