@@ -1,0 +1,30 @@
+{
+    "name": "msteams_customizer",
+    "version": "1.0.0",
+    "description": "enable debug tools, inject javascript/css and customize the shitty ms teams",
+    "main": "dist/index.js",
+    "bin": "dist/index.js",
+    "scripts": {
+        "lint": "eslint src/",
+        "lint:fix": "eslint src/",
+        "build": "yarn lint && tsc",
+        "run": "yarn build && node dist/index.js $TEAMS_ASAR_PATH"
+    },
+    "author": "Peter Repukat - FlatspotSoftware",
+    "license": "WTFPL",
+    "devDependencies": {
+        "@types/node": "^17.0.23",
+        "@typescript-eslint/eslint-plugin": "^5.18.0",
+        "@typescript-eslint/parser": "^5.18.0",
+        "eslint": "^8.13.0",
+        "eslint-plugin-import": "^2.26.0",
+        "eslint-plugin-no-null": "^1.0.2",
+        "eslint-plugin-prefer-arrow": "^1.2.3",
+        "eslint-plugin-tsc": "^2.0.0",
+        "eslint-plugin-tsdoc": "^0.2.16",
+        "typescript": "^4.6.3"
+    },
+    "dependencies": {
+        "asar": "^3.1.0"
+    }
+}

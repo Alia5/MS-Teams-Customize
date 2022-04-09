@@ -1,0 +1,9 @@
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+dist
+node_modules
+yarn-error.log
+.vscode
