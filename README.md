@@ -15,6 +15,14 @@ npm i -g msteams-customizer
 
 ## Usage
 
+patch (with default settings)
+
 ```bash
-msteams-customizer [PATH TO app.asar (without brackets)]
+msteams-customizer patch [PATH TO app.asar (without brackets)]
+```
+
+restore
+
+```bash
+msteams-customizer restore [PATH TO app.asar (without brackets)]
 ```
