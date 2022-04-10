@@ -1,8 +1,10 @@
-import { enableDebuggingFeatures } from './msteamsDebugEnabler/debugEnabler';
+#!/usr/bin/env node
+import { parseCommands } from './cli/index';
 
 const main = () => {
-    enableDebuggingFeatures(process.argv).catch((err) => {
+    parseCommands().catch((err) => {
         console.error(err);
+        console.info('Teams must be closed to patch/unpatch!');
     });
 };
 
