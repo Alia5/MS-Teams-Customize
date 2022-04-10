@@ -15,14 +15,28 @@ npm i -g msteams-customizer
 
 ## Usage
 
-patch (with default settings)
-
 ```bash
-msteams-customizer patch [PATH TO app.asar (without brackets)]
+msteams-customizer --help
+msteams-customizer COMMAND --help
 ```
 
-restore
+### patch (with default settings)
+
+```bash
+msteams-customizer patch [PATH TO app.asar (without brackets)] -d
+```
+
+### restore
 
 ```bash
 msteams-customizer restore [PATH TO app.asar (without brackets)]
+```
+
+### Experimental Style patch (PoC)
+
+You can provide the option `--experimentalStylePatch` to enable a PoC patch,  
+that re-styles the messages you've sent (Black instead of purple-ish)
+
+```bash
+msteams-customizer patch [PATH TO app.asar (without brackets)] -d --experimentalStylePatch 
 ```
