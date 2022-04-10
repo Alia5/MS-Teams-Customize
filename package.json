@@ -1,6 +1,6 @@
 {
     "name": "msteams-customizer",
-    "version": "0.1.2",
+    "version": "0.2.0",
     "description": "enable debug tools, inject javascript/css and customize the shitty ms teams",
     "main": "dist/index.js",
     "bin": "dist/index.js",
