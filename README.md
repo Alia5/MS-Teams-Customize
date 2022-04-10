@@ -40,3 +40,8 @@ that re-styles the messages you've sent (Black instead of purple-ish)
 ```bash
 msteams-customizer patch [PATH TO app.asar (without brackets)] -d --experimentalStylePatch 
 ```
+
+## App.asar locations
+ - *Windows*: C:\Users\<USERNAME>\AppData\Local\Microsoft\Teams\current\resources
+ - *MacOs*: /Applications/Microsoft Teams.app/Contents/Resources/app.asar (?)
+ - *Linux*: /usr/share/teams/resources/app.asar (?)
