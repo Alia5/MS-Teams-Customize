@@ -1,15 +1,19 @@
 {
     "name": "msteams-customizer",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "enable debug tools, inject javascript/css and customize the shitty ms teams",
     "main": "dist/index.js",
     "bin": "dist/index.js",
+    "files": [
+        "dist/*.js", "dist/**/*.js"
+    ],
     "repository": {
         "type": "git",
         "url": "https://github.com/Alia5/MS-Teams-Customize"
     },
     "readme": "README.md",
     "scripts": {
+        "clean": "rm -rf dist",
         "lint": "eslint src/",
         "lint:fix": "eslint src/",
         "build": "yarn lint && tsc",
